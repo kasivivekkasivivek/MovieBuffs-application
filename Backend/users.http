@@ -1,0 +1,25 @@
+
+###
+// post  the user into data base 
+POST http://localhost:3001/addusers/
+Content-Type: application/json
+
+{
+    "FirstName":"Vivek Reddy",
+    "LastName":"Kasireddy",
+    "UserName":"rajesj12",
+    "EmailAddress":"rajesh1@gmail.com",
+    "SecurityQuestion":"What id your pet name?",
+    "SecurityAnswer":"Sunny",
+    "UserPassword":"helloWorldsc"
+}
+
+###
+// user login 
+POST http://localhost:3001/loginUser/
+Content-Type: application/json
+
+{
+    "UserName":"rajesj12",
+    "UserPassword":"helloWorldsc"
+}
